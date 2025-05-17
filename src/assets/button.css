@@ -1,0 +1,54 @@
+.fill-button:hover,
+.fill-button:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+.fill-button {
+  --color: #a972cb;
+  --hover: #d972cb;
+}
+.pulse {
+  --color: #ef6eae;
+  --hover: #f96eae;
+}
+.close {
+  --color: #ff7f82;
+  --hover: #ffaf82;
+}
+.raise {
+  --color: #ffa260;
+  --hover: #ffd260;
+}
+.up {
+  --color: #e4cb58;
+  --hover: #f4fb58;
+}
+.slide {
+  --color: #8fc866;
+  --hover: #bfc866;
+}
+.offset {
+  --color: #19bc8b;
+  --hover: #49ec8b;
+}
+button {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+}
+/*  Basic button styles */
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+  }
